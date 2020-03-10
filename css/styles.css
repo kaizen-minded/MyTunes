@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #252529;
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+nav {
+  height: auto;
+  border-bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+}
+nav ul {
+  display: none;
+  height: auto;
+  list-style-type: none;
+}
+nav li {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+nav a {
+  text-align: left;
+  width: 100%;
+  text-indent: 25px;
+  text-decoration: none;
+  background: #333;
+  color: #eee;
+  border-bottom: 1px solid #555;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup:after {
+  content: "|||";
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari and Chrome */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+nav a#openup {
+  display: block;
+  background-color: #333;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 580px) {
+  nav {
+    height: 40px;
+    line-height: 1;
+  }
+  nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    width: 100px;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: none;
+  }
+  nav a#openup {
+    display: none;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
