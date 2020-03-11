@@ -13,6 +13,37 @@ body {
   color: #fff;
   line-height: 1.6;
 }
+
+/* Showcase */
+#showcase {
+  background: url("../images/showcase.jpg") no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+#showcase .container {
+  margin-top: 25vh;
+}
+#showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+#showcase h2 {
+  font-size: 2rem;
+}
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.lead {
+  font-size: 1.3rem;
+}
+
+/* Navigation */
 nav {
   height: auto;
   border-bottom: 0;
