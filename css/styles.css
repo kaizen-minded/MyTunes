@@ -18,19 +18,20 @@ body {
 #showcase {
   background: url("../images/showcase.jpg") no-repeat center/cover;
   width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  height: 50vh;
   position: relative;
   overflow-y: hidden;
 }
 #showcase .container {
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 #showcase h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0;
 }
 #showcase h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 /* Utility Classes */
 .container {
@@ -42,7 +43,9 @@ body {
 .lead {
   font-size: 1.3rem;
 }
-
+.hide-on-small {
+  display: none;
+}
 /* Navigation */
 nav {
   height: auto;
@@ -96,6 +99,19 @@ nav a#openup {
 }
 
 @media screen and (min-width: 580px) {
+  #showcase {
+    height: 100vh;
+  }
+  #showcase .container {
+    margin-top: 25vh;
+  }
+  #showcase h1 {
+    font-size: 4rem;
+  }
+  #showcase h2 {
+    font-size: 2rem;
+  }
+
   nav {
     height: 40px;
     line-height: 1;
@@ -119,6 +135,9 @@ nav a#openup {
   }
   nav a#openup {
     display: none;
+  }
+  .hide-on-small {
+    display: block;
   }
 }
 
