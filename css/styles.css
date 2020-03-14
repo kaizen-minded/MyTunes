@@ -67,6 +67,23 @@ section#entertainment {
 .gift-cards {
   text-align: left;
 }
+/* Footer */
+footer .footer-cols {
+  display: none;
+}
+footer .footer-cols ul {
+  list-style: none;
+}
+footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+}
 /* Utility Classes */
 .container {
   max-width: 1180px;
@@ -80,6 +97,9 @@ section#entertainment {
 }
 .hide-on-small {
   display: none;
+}
+.text-center {
+  text-align: center;
 }
 /* Buttons */
 .btn {
@@ -185,6 +205,14 @@ nav a#openup {
   #showcase h2 {
     font-size: 2rem;
   }
+  footer .footer-cols {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+  }
 
   nav {
     height: 40px;
@@ -217,6 +245,12 @@ nav a#openup {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-height: 580px) {
+  #showcase p.lead {
+    display: none;
   }
 }
 
